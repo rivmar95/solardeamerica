@@ -176,6 +176,9 @@ iframe {
 .item5 {
   grid-area: formulario; }
 
+.container {
+  padding-top: 1rem; }
+
 .col-12 {
   background-color: #151515;
   text-align: center;
@@ -184,11 +187,15 @@ iframe {
 .col-6 {
   background-color: #151515;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 10px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15); }
 
 .row {
-  row-gap: 10px; }
+  row-gap: 5px; }
+
+.mb-3 {
+  background-color: #151515;
+  padding-bottom: 1rem; }
 
 /*Media Queries*/
 @media (max-width: 576px) {
@@ -221,16 +228,13 @@ iframe {
     border-radius: 3px;
     font-size: 12px; }
   iframe {
-    height: 40vh;
-    width: 20vh; }
-  .col-12, .col-6 {
-    font-size: 10px;
-    text-align: center; } }
+    height: 30vh;
+    width: 40vh; }
+  .col-6, .col-12, nav, footer {
+    width: 100%; }
+  .col-6 {
+    padding-bottom: 1rem; } }
 
 @media (min-width: 768px) {
   .contenedor {
     padding-top: 2rem; } }
-
-@media (min-width: 1024px) {
-  .carousel-inner {
-    padding-bottom: 2rem; } }
