@@ -28,6 +28,12 @@ body{
   line-height: 25px;
 }
 
+.carousel {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
     .nav{
         background: #151515;
         box-shadow: $sombra;
@@ -218,6 +224,23 @@ line-height: 25px;
     grid-area: formulario;
 }
 
+.col-12 {
+    background-color: $tarjeta;
+    text-align: center;
+    box-shadow: $sombra;
+}
+
+.col-6 {
+    background-color: $tarjeta;
+    text-align: center;
+    padding-top: 1rem;
+    box-shadow: $sombra;
+}
+
+.row {
+    row-gap: 10px;
+} 
+
 /*Media Queries*/
 
 @media (max-width: 576px) {
@@ -263,22 +286,15 @@ h4 {
 			border-radius: 3px;
 		font-size: 12px;  }
 
-
-.item1 {
-    font-size: 12px;
-}
-
-.item4 {
-    padding-top: 0vh;
-}
- 
 iframe {
-    height: 50vh;
-    width: 40vh; 
-}  
-.grilla div {  
-padding-top: 0.5rem;
+    height: 40vh;
+    width: 20vh; 
 } 
+
+.col-12, .col-6 {
+    font-size: 10px;
+    text-align: center;
+}
 }
            
 
