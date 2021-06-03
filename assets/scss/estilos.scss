@@ -172,16 +172,19 @@ iframe {
 }
 
 .col-12 {
-    background-color: #151515;
+color: black;
     text-align: center;
-    box-shadow: $sombra;
+    font-weight: 700;
+    box-sizing: border-box;
 }
 
-.col-6 {
+.col-8, .col-4 {
     background-color: $tarjeta;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     box-shadow: $sombra;
+    box-sizing: border-box;
 }
 
 .row {
@@ -190,6 +193,7 @@ iframe {
 
 .mb-3 {
     background-color: $gridcolor;
+    box-shadow: $sombra;
     padding-bottom: 1rem;
 }
 
@@ -225,7 +229,7 @@ h4 {
 		
 		}
 
-		.contenedor, .col-6, .col-12, .mb-3 {
+		.contenedor, .col-8, .col-4, .col-12, .mb-3 {
 			max-width: 700px;
 			width: 100%;
 			margin: auto;
@@ -239,9 +243,14 @@ h4 {
 		font-size: 12px;  }
 
 iframe {
-    height: 30vh;
+    height: 40vh;
     width: 40vh; 
 } 
+
+.col-4 {
+    background-color: rgb(192, 67, 0);
+}
+
 }
 @media (min-width: 768px) {
 .contenedor {
