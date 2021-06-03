@@ -176,6 +176,8 @@ color: black;
     text-align: center;
     font-weight: 700;
     box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .col-8, .col-4 {
@@ -188,7 +190,7 @@ color: black;
 }
 
 .row {
-    row-gap: 5px;
+    row-gap: 0px;
 }
 
 .mb-3 {
@@ -201,7 +203,7 @@ color: black;
 
 @media (max-width: 576px) {
 
-h4 {
+h4{
     font-size: 30px;
 }
 
@@ -250,6 +252,20 @@ iframe {
 .col-4 {
     background-color: rgb(192, 67, 0);
 }
+
+.col-12 {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #AAAA;
+    padding-bottom: 0.5rem;
+    box-shadow: $sombra;
+}
+
+.row {
+    row-gap: 10px ;
+}
+
 
 }
 @media (min-width: 768px) {
