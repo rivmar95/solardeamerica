@@ -193,7 +193,15 @@ color: black;
 
 /*Media Queries*/
 
-@media (max-width: 576px) {
+@media (max-width: 380px) {
+    .logo {
+        width: 200px;
+        height: 50px;
+    }
+}
+
+
+@media (min-width: 400px max-width 576px) {
 
 .logo {
     width: 220px;
