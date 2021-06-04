@@ -13,23 +13,21 @@ body {
   width: 50%;
   margin: 0 auto; }
 
-.nav {
-  background: #151515;
+.navbar {
+  background-color: #151515;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
   border-bottom: #ff5a00 solid 2px;
-  justify-content: space-around;
-  font-size: 16px;
-  font-weight: 700; }
+  font-size: 16px; }
 
-.nav a {
-  padding-top: 1rem; }
-
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: whitesmoke; }
 
-.nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
   color: #ff5a00;
   transition: ease-out 0.5s; }
+
+.logo {
+  max-width: 1000px; }
 
 h4 {
   color: black;
@@ -156,6 +154,9 @@ iframe {
 
 /*Media Queries*/
 @media (max-width: 576px) {
+  .logo {
+    width: 250px;
+    height: 50px; }
   h4 {
     font-size: 30px; }
   * {
