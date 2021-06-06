@@ -192,20 +192,20 @@ color: black;
 }
 
 /*Media Queries*/
-
-@media (max-width: 380px) {
+@media (max-width: 400px) {
     .logo {
         width: 200px;
-        height: 50px;
     }
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
 }
+ }
 
-
-@media (min-width: 400px max-width 576px) {
+@media (max-width: 576px) {
 
 .logo {
-    width: 220px;
-    height: 50px;
+    width: 210px;
 }
 
 
