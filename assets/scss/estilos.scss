@@ -17,6 +17,8 @@ $borde: rgb(255,90,0) solid 2px;
 /*Estilos*/
 
 * { 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;       
 }
 
@@ -68,6 +70,61 @@ transition: ease-out 0.5s;
             color: #464647;
             transition: ease-out 1s;
             }
+
+.single-content {
+    position: relative;
+    transition: .5s;
+    box-shadow: $sombra;
+}
+
+.single-content .text-content,
+.single-content:after {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.single-content::after{
+    content: '';
+    display: block;
+    background: $gridcolor;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.single-content:hover::after {
+    opacity: .9;
+    transform: rotate3d(0,0,0,0deg);    
+}
+
+.single-content img {
+    width: 100%;
+    height: auto;
+}
+
+.text-content {
+    top: 50%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%,-30%);
+    transition: .5s;
+    text-align: center;
+    color: $fontcolor;
+}
+
+.text-content h5 {
+    font-family: $fuente;
+    color: $fontcolor;
+    font-weight: 700;
+}
+
+.single-content:hover .text-content {
+    opacity: 1;
+    transform: translate(0,-50%);
+    transition-delay: .5s;
+}
 
 .listaobras{
     text-align: left;
@@ -182,7 +239,7 @@ color: black;
 }
 
 .row {
-    row-gap: 0px;
+    row-gap: 10px;
 }
 
 .mb-3 {
@@ -204,8 +261,17 @@ color: black;
 
 @media (max-width: 576px) {
 
+    #galeria img {
+        width: 95%;
+        height: 200px;
+  }
+
 .logo {
     width: 210px;
+}
+
+.row {
+    row-gap: 2px;
 }
 
 
@@ -275,5 +341,4 @@ iframe {
 .contenedor {
     padding-top: 2rem;
 } 
-}
-
+ }

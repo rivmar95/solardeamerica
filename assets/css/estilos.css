@@ -1,5 +1,7 @@
 /*Estilos*/
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 body {
@@ -40,6 +42,53 @@ h4 {
 .fa-circle:hover {
   color: #464647;
   transition: ease-out 1s; }
+
+.single-content {
+  position: relative;
+  transition: .5s;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15); }
+
+.single-content .text-content,
+.single-content:after {
+  position: absolute;
+  left: 0px;
+  right: 0px; }
+
+.single-content::after {
+  content: '';
+  display: block;
+  background: #151515;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: .5s; }
+
+.single-content:hover::after {
+  opacity: .9;
+  transform: rotate3d(0, 0, 0, 0deg); }
+
+.single-content img {
+  width: 100%;
+  height: auto; }
+
+.text-content {
+  top: 50%;
+  opacity: 0;
+  z-index: 1;
+  transform: translate(10%, -30%);
+  transition: .5s;
+  text-align: center;
+  color: whitesmoke; }
+
+.text-content h5 {
+  font-family: "Raleway", sans-serif;
+  color: whitesmoke;
+  font-weight: 700; }
+
+.single-content:hover .text-content {
+  opacity: 1;
+  transform: translate(0, -50%);
+  transition-delay: .5s; }
 
 .listaobras {
   text-align: left;
@@ -145,7 +194,7 @@ iframe {
   box-sizing: border-box; }
 
 .row {
-  row-gap: 0px; }
+  row-gap: 10px; }
 
 .mb-3 {
   background-color: #151515;
@@ -161,8 +210,13 @@ iframe {
     height: 1em; } }
 
 @media (max-width: 576px) {
+  #galeria img {
+    width: 95%;
+    height: 200px; }
   .logo {
     width: 210px; }
+  .row {
+    row-gap: 2px; }
   h4 {
     font-size: 30px; }
   * {
