@@ -88,7 +88,8 @@ h4 {
 
 .text-content p {
   font-family: "Raleway", sans-serif;
-  color: whitesmoke; }
+  color: whitesmoke;
+  font-size: 15px; }
 
 .single-content:hover .text-content {
   opacity: 1;
@@ -180,8 +181,7 @@ iframe {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15); }
 
 .container {
-  padding-top: 1rem;
-  padding-right: 1rem; }
+  padding-top: 1rem; }
 
 .col-12 {
   color: black;
@@ -208,19 +208,18 @@ iframe {
   padding-bottom: 1rem; }
 
 /*Media Queries*/
-@media (max-width: 400px) {
+@media (max-width: 410px) {
   .logo {
     width: 200px; }
   .navbar-toggler-icon {
     width: 1em;
-    height: 1em; } }
+    height: 1em; }
+  .container {
+    padding-right: 1rem; } }
 
 @media (max-width: 576px) {
-  #galeria img {
-    width: 95%;
-    height: 200px; }
   .logo {
-    width: 210px; }
+    width: 220px; }
   .row {
     row-gap: 2px; }
   h4 {

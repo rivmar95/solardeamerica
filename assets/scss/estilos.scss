@@ -124,6 +124,7 @@ transition: ease-out 0.5s;
 .text-content p {
     font-family: $fuente;
     color: $fontcolor;
+    font-size: 15px;
 }
 
 .single-content:hover .text-content {
@@ -224,7 +225,6 @@ iframe {
 
 .container {
     padding-top: 1rem;
-    padding-right: 1rem;
 }
 
 .col-12 {
@@ -256,7 +256,7 @@ color: black;
 }
 
 /*Media Queries*/
-@media (max-width: 400px) {
+@media (max-width: 410px) {
     .logo {
         width: 200px;
     }
@@ -264,17 +264,15 @@ color: black;
     width: 1em;
     height: 1em;
 }
- }
+.container {
+    padding-right: 1rem;
+}
+}
 
 @media (max-width: 576px) {
 
-    #galeria img {
-        width: 95%;
-        height: 200px;
-  }
-
 .logo {
-    width: 210px;
+    width: 220px;
 }
 
 .row {
