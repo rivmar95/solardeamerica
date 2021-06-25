@@ -326,11 +326,6 @@ h4{
     font-size: 30px;
 }
 
-	* {
-		margin: 10px;
-		box-sizing: border-box;
-	}
-
 	.tarjeta__img {
 		width: 100px;
 		height: 100px;
@@ -384,7 +379,7 @@ iframe {
 }
 
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 .contenedor {
     padding-top: 2rem;
 } 
