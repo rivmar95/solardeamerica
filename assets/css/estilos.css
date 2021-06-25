@@ -209,12 +209,14 @@ iframe {
   padding-bottom: 1rem; }
 
 /*Media Queries*/
-@media (max-width: 410px) {
+@media (min-width: 320px) and (max-width: 375px) {
   .logo {
-    width: 200px; }
+    width: 180px; }
   .navbar-toggler-icon {
     width: 1em;
-    height: 1em; }
+    height: 1em; } }
+
+@media (min-width: 376px) and (max-width: 410px) {
   .container {
     padding-right: 1rem; } }
 
