@@ -102,6 +102,7 @@ transition: ease-out 0.5s;
 .single-content img {
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .text-content {
@@ -114,10 +115,15 @@ transition: ease-out 0.5s;
     color: $fontcolor;
 }
 
-.text-content h5 {
+.text-content h4 {
+    font-family: $fuente;
+    color: rgb(255,90,0);
+    font-weight: 700;
+}
+
+.text-content p {
     font-family: $fuente;
     color: $fontcolor;
-    font-weight: 700;
 }
 
 .single-content:hover .text-content {

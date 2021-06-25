@@ -69,7 +69,8 @@ h4 {
 
 .single-content img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin: 0; }
 
 .text-content {
   top: 50%;
@@ -80,10 +81,14 @@ h4 {
   text-align: center;
   color: whitesmoke; }
 
-.text-content h5 {
+.text-content h4 {
   font-family: "Raleway", sans-serif;
-  color: whitesmoke;
+  color: #ff5a00;
   font-weight: 700; }
+
+.text-content p {
+  font-family: "Raleway", sans-serif;
+  color: whitesmoke; }
 
 .single-content:hover .text-content {
   opacity: 1;
