@@ -160,6 +160,7 @@ input {
 }
 
   .contenedor {
+      padding-top: 2rem;
     max-width: 1000px;
     width: 70%;
     margin: 0 auto; }
@@ -191,7 +192,7 @@ input {
   .tarjeta__parrafo {
       font-weight: 300;
     line-height: 30px;
-    font-size: 16px; }
+    font-size: 15px; }
   
   .boton {
     height: 60px;
@@ -267,7 +268,6 @@ color: black;
         width: 1em;
         height: 1em;
     }
-}
 
 .tarjeta__img {
     width: 100px;
@@ -277,7 +277,7 @@ color: black;
     }  
     .tarjeta__parrafo {
         line-height: 28px;
-        font-size: 13px;
+        font-size: 15px;
         margin-right: 0px;
     }
 
@@ -288,99 +288,99 @@ color: black;
     
     }
 
-    .contenedor, .col-8, .col-4, .col-12, .mb-3 {
-        max-width: 700px;
-        width: 100%;
-        margin: auto;
-        padding-top: 1rem;
-    }
-
-.col-4 {
-    background-color: rgb(192, 67, 0);
-}
-
     iframe {
         width: 40vh;
         height: 40vh;
     }
 
-@media (min-width: 376px) and (max-width: 410px) {
-
-.container {
-    padding-right: 1rem;
-}
-}
-
-@media (min-width: 411px) and (max-width: 576px) {
-
-.logo {
-    width: 220px;
-}
-
-.row {
-    row-gap: 2px;
-}
-
-
-h4{
-    font-size: 30px;
-}
-
-	.tarjeta__img {
-		width: 100px;
-		height: 100px;
-		margin-right: 5px;
-        margin-left: 5px;
-		}  
-		.tarjeta__parrafo {
-			line-height: 28px;
-			font-size: 13px;
-			margin-right: 0px;
-		}
-
-		.tarjeta__titulo {
-			font-size: 18px;
-			margin-bottom: 5px;
-			color: $fontcolor;
-		
-		}
-
-		.contenedor, .col-8, .col-4, .col-12, .mb-3 {
-			max-width: 700px;
-			width: 100%;
-			margin: auto;
-            padding-top: 0.5rem;
-		}
-		
-		.compra{
-			height: 35px;
-			padding: 10px;
-			border-radius: 3px;
-		font-size: 12px;  }
-
-iframe {
-    height: 40vh;
-    width: 40vh; 
-} 
-
 .col-4 {
     background-color: rgb(192, 67, 0);
 }
 
-.col-12 {
-    text-transform: uppercase;
-    font-size: 15px;
-    line-height: 30px;
-    color: #464646;
-    background-color: #AAAA;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    box-shadow: $sombra;
+.contenedor, .col-8, .col-4, .col-12, .mb-3 {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    padding-top: 1rem;
 }
 
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-.contenedor {
-    padding-top: 2rem;
-} 
  }
+
+ @media (min-width: 376px) and (max-width: 410px) {
+
+    .container {
+        padding-right: 1rem;
+    }
+    }
+    
+    @media (min-width: 411px) and (max-width: 576px) {
+    
+    .logo {
+        width: 220px;
+    }
+    
+    .row {
+        row-gap: 2px;
+    }
+    
+    
+    h4{
+        font-size: 30px;
+    }
+     
+        .tarjeta__img {
+            width: 100px;
+            height: 100px;
+            margin-right: 5px;
+            margin-left: 5px;
+            }  
+            .tarjeta__parrafo {
+                line-height: 28px;
+                font-size: 16px;
+                margin-right: 0px;
+            }
+    
+            .tarjeta__titulo {
+                font-size: 18px;
+                margin-bottom: 5px;
+                color: $fontcolor;
+            
+            }
+    
+            .contenedor, .col-8, .col-4, .col-12, .mb-3 {
+                max-width: 700px;
+                width: 100%;
+                margin: auto;
+            }
+
+            .contenedor {
+                padding-top: 2rem;
+            }
+            
+            .compra{
+                height: 35px;
+                padding: 10px;
+                border-radius: 3px;
+            font-size: 12px;  }
+    
+    iframe {
+        height: 40vh;
+        width: 40vh; 
+    } 
+    
+    .col-4 {
+        background-color: rgb(192, 67, 0);
+    }
+    
+    .col-12 {
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 30px;
+        color: #464646;
+        background-color: #AAAA;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        box-shadow: $sombra;
+    }
+    }
+
