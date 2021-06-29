@@ -11,10 +11,6 @@ body {
   color: whitesmoke;
   line-height: 25px; }
 
-.carousel {
-  width: 50%;
-  margin: 0 auto; }
-
 .navbar {
   background-color: #151515;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
@@ -201,6 +197,15 @@ iframe {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
   box-sizing: border-box; }
 
+a {
+  text-decoration: none;
+  color: whitesmoke; }
+
+a:hover {
+  color: #ff5a00;
+  transition: 0.5s;
+  cursor: pointer; }
+
 .row {
   row-gap: 10px; }
 
@@ -233,7 +238,9 @@ iframe {
     width: 40vh;
     height: 40vh; }
   .col-4 {
-    background-color: #c04300; }
+    background-color: #ff5a00; }
+  a:hover {
+    color: #151515; }
   .contenedor, .col-8, .col-4, .col-12, .mb-3 {
     max-width: 700px;
     width: 100%;
@@ -250,7 +257,7 @@ iframe {
   .row {
     row-gap: 2px; }
   h4 {
-    font-size: 30px; }
+    font-size: 25px; }
   .tarjeta__img {
     width: 100px;
     height: 100px;
@@ -279,7 +286,9 @@ iframe {
     height: 40vh;
     width: 40vh; }
   .col-4 {
-    background-color: #c04300; }
+    background-color: #ff5a00; }
+  a:hover {
+    color: black; }
   .col-12 {
     text-transform: uppercase;
     font-size: 15px;
